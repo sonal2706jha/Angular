@@ -1,0 +1,16 @@
+<div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <h1>Demo of Angular</h1>
+        <hr>
+        <!-- <app-servers></app-servers> -->
+
+        <app-servers (childEvent)="msg = ($event)" [receivedmessage]="messageToInput"></app-servers>
+       
+        <!--<div app-servers></div>-->
+        <!--<div class="app-servers"></div>-->
+      </div>
+    </div>
+  </div>
+  
+  
