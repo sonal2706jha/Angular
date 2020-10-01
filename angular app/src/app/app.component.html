@@ -1,16 +1,11 @@
 <div class="container">
-    <div class="row">
-      <div class="col-md-12">
-        <h1>Demo of Angular</h1>
-        <hr>
-        <!-- <app-servers></app-servers> -->
 
-        <app-servers (childEvent)="msg = ($event)" [receivedmessage]="messageToInput"></app-servers>
-       
-        <!--<div app-servers></div>-->
-        <!--<div class="app-servers"></div>-->
-      </div>
-    </div>
-  </div>
-  
-  
+  <h1>Angular Assignment</h1>
+  <h3>
+    Task-1: Practice some basic Component interaction with @Input, @Output and EventEmitter
+  </h3>
+  <h4> {{message}}</h4>
+
+   <app-child (childEvent)="message = $event" [parentData]="name"></app-child>
+
+</div> 
