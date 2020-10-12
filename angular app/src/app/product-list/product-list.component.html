@@ -1,7 +1,0 @@
-<div class="container mt-5">
-    <h2>2.Create simple angular app with listing and detail page(routeparams). </h2>    
-    <h3>Product List</h3>
-    <div class="list-group">
-        <a class="list-group-item list-group-item-action" *ngFor="let p of products" [routerLink]="['/product-details', p.id]">{{p.name}}</a>
-    </div>
-</div>
